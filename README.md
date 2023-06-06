@@ -1,6 +1,6 @@
-# 06June2023 - GitHub & Actions
+### 06June2023 - GitHub & Actions
 
-# Git Client Installation Instructions for Ubuntu 22.04
+### Git Client Installation Instructions for Ubuntu 22.04
 
 ```
 sudo apt-get update
@@ -8,7 +8,7 @@ sudo apt-get install git
 git version
 ```
 
-# Git Client Installation for Windows
+### Git Client Installation for Windows
 
 Download Git Client for Windows : https://git-scm.com/download/win and go through default installation steps <br>
 
