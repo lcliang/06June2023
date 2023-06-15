@@ -1,0 +1,27 @@
+# This is a basic workflow to help you get started with Env Variable
+
+name: Env Variable Test1
+
+# Controls when the workflow will run
+on:
+  
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  environ-test1:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    env:
+      JOB_ENV: Weather  
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    - name: Print host name
+      run: echo "ENV is accessible within the step $STEP_ENV"
+      env:
+        STEP_ENV: Earthly
+    - name: This step may not have access to the ENV variable?? but what about job level ENV??
+      run: echo "Host in the next step is $HOST_NAME and Job level ENV value is $JOB_ENV"
